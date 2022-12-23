@@ -1,0 +1,43 @@
+.footer {
+    border-top: solid white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    background-color: rgb(91, 91, 91);
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 18px;
+    
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0 28px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer h1{
+    color: white;
+    border-bottom: solid #ccc;
+}
+
+@media (max-width: 880px){
+    .footer{
+        flex-direction: column;
+        height: max-content;
+    }
+    .footer ul {
+        margin-bottom: 15px;
+    }
+    .footer ul a:hover {
+        color: tomato;
+        transition: 0.3s ease-in;
+    }
+}
